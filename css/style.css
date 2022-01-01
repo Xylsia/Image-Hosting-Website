@@ -1,0 +1,606 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    font-family:Lucida Sans Unicode;
+    background-color: #ccbddb;
+}
+
+.loginWarning{
+    color: #591b98;
+    font-size: 2rem;
+}
+
+/* header */
+header{
+    background-color: #846284;
+    color: #d9cee4;
+}
+
+.headerNav{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-left: 35%;
+    height: auto;
+    overflow: hidden;
+}
+
+.headerNav li{
+    list-style-type: none;
+    float: left;
+}
+
+.headerNav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.7em 2em;
+    text-decoration: none;
+}
+
+.active{
+    background-color: #9d7b9d;
+    border-radius: 1em;
+}
+
+.headerNav li a:hover:not(.active){
+    color: #47d147;
+    transition: 0.2s;
+}
+
+.headerMid{
+    background-image: url("../img/header.png");
+    width: 100%;
+    padding: 3em;
+    background-position: center;
+    border-top: 0.4em solid #674c67;
+}
+
+.title{
+    font-family: Impact, sans-serif;
+    font-size: 5rem;
+}
+
+.title a{
+    text-decoration: none;
+    color: #deedde;
+}
+
+.title a:hover{
+    transition: 0.5s;
+    color: #bddbbd;
+}
+
+.headerBot{
+    padding: 1em;
+    border-top: 0.4em solid #674c67;
+    border-bottom: 0.4em solid #674c67;
+}
+
+.searchText{
+    width: 40%;
+    height: auto;
+    padding: 0.5em;
+    font-size: 1em;
+    border: 0.15em solid #196619;
+    background-color: #cee4ce;
+    font-style: italic;
+}
+
+.searchButton{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: #591b98;
+    font-size: 1rem;
+    border: 0.15em solid #196619;
+    background-color: #cee4ce;
+    cursor: pointer;
+}
+
+/* slideShow */
+.slideshow{
+    align-items: center;
+    width: 60%;
+    height: auto;
+    margin-top: 2em;
+    border-top-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+    border: 0.2em solid #196619;
+    -webkit-animation: fade 2s infinite;
+    -moz-animation: fade 2s infinite;
+    -ms-animation: fade 2s infinite;
+    -o-animation: fade 2s infinite;
+    animation: fade 2s infinite;
+}
+
+@keyframes fade{
+    0% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes fade{
+    0% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes fade{
+    0% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@-ms-keyframes fade{
+    0% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@-o-keyframes fade{
+    0% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+/* index */
+.indexMiddle{
+    margin: 2em 5em;
+    background-color: #b39cc9;
+    border-top-left-radius: 10em;
+    border-bottom-right-radius: 10em;
+    border: 0.2em solid #a78cc0;
+}
+
+.indexTitle a{
+    text-decoration: none;
+    color: #196619;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.indexTitle a:hover{
+    color: #5b1f93;
+    transition: 0.4s;
+}
+
+
+/* terms cookies about privacy faq */
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middleImg{
+    width: 90%;
+    height: auto;
+    margin-top: 1em;
+}
+
+.text{
+    width: 90%;
+    height: auto;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background-color: #c0add2;
+    color: #5b1f93;
+    word-wrap: break-word;
+    border-bottom: 0.2em solid #a78cc0;
+    border-left: 0.2em solid #a78cc0;
+    border-right: 0.2em solid #a78cc0;
+}
+
+/* login register contact upload*/
+.question{
+    width: 90%;
+    height: auto;
+    background-color: #c0add2;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2rem;
+    font-style: italic;
+    padding-top: 1em;
+    color:#591b98;
+}
+
+.form{
+    background-color: #c0add2;
+    width: 90%;
+    height: auto;
+    padding: 2em;
+    margin-bottom: 1em;
+    border-bottom: 0.2em solid #a78cc0;
+    border-left: 0.2em solid #a78cc0;
+    border-right: 0.2em solid #a78cc0;
+}
+
+.label{
+    font-style: italic;
+    color:#591b98;
+    font-size: 1.3rem;
+}
+
+.labelChoice{
+    font-style: italic;
+    color:#591b98;
+    font-size: 1rem;
+}
+
+#upload{
+    font-style: italic;
+    color:#591b98;
+    font-size: 1rem;
+}
+
+#username, #password, #passwordConfirm, #email, #displayName, #textArea, #title{
+    border: 0.2em solid #196619;
+    padding: 0.6em;
+    background-color: #cee4ce;
+    font-style: italic;
+}
+
+#textArea{
+    resize: none;
+}
+
+#usernameSpan, #passwordSpan, #passwordConfirmSpan, #emailSpan, #displayNameSpan, #textAreaSpan, #titleSpan, #uploadSpan{
+    position: absolute;
+    margin-left: 0.5em;
+    font-size: 0.9rem;
+    margin-top: 0.4em;
+}
+
+#registerButton, #logButton, #loginButton, #regButton, #contactButton, #uploadButton, #buttonPhp, #buttonRating, #buttonFavorite, #buttonChangeEmail, #buttonChangePassword, #buttonChangeDisplayName, #buttonDeleteAccount{
+    border: 0.15em solid #196619;
+    padding: 0.5em;
+    font-size: 1rem;
+    color: #591b98;
+    background-color: #bddbbd;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+#registerButton:hover, #logButton:hover, #loginButton:hover, #regButton:hover, #contactButton:hover, #uploadButton:hover, #buttonPhp:hover, #buttonRating:hover, #buttonFavorite:hover, #buttonChangeEmail:hover, #buttonChangePassword:hover, #buttonChangeDisplayName:hover, #buttonDeleteAccount:hover{
+    background-color: #196619;
+    transition: 0.3s;
+    color: #d9cee4;
+}
+
+.error{
+    padding-top: 2em;
+    background-color: #c0add2;
+    color: red;
+    width: 90%;
+    height: auto;
+}
+
+.success{
+    padding-top: 2em;
+    background-color: #c0add2;
+    color: green;
+    width: 90%;
+    height: auto;
+}
+
+/* browse search */
+.results{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    background-color: #c0add2;
+    border: 0.2em solid #a78cc0;
+}
+
+.result{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+.img{
+    width: 95%;
+    height: auto;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;   
+}
+
+.img:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.resultText h2{
+    font-size: 2rem;
+    color: #196619;
+}
+
+#pictureText1{
+    background-color: #b39cc9;
+}
+
+.resultText h3{
+    width: 90%;
+    white-space: nowrap;
+    height: auto;
+    color: #591b98;
+}
+
+.resultText h4{
+    width: 90%;
+    white-space: nowrap;
+    height: auto;
+    color: #196619;
+    font-style: italic;
+}
+
+.resultRating h4{
+    width: 90%;
+    white-space: nowrap;
+    height: auto;
+    color: #196619;
+    color: #248f24;
+    font-style: italic;
+}
+
+.resultSearch{
+    padding: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: auto;
+    font-size: 2rem;
+    background-color: #c0add2;
+    color: #591b98;
+    border-bottom: 0.2em solid #a78cc0;
+}
+
+.resultBrowse{
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: #c0add2;
+    border: 0.2em solid #a78cc0;
+}
+
+.resultBrowse h2{
+    padding-top: 0.5em;
+}
+
+.resultNav1{
+    overflow: hidden;
+    margin-left: 11%;
+}
+
+.resultNav2{
+    overflow: hidden;
+    margin-left: 25%;
+}
+
+.resultNav1 li,.resultNav2 li{
+    list-style-type: none;
+    float: left;
+}
+
+.resultNav1 li a, .resultNav2 li a{
+    display: block;
+    color: #591b98;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resultNav1 li a:hover, .resultNav2 li a:hover{
+    color: #196619;
+    transition: 0.2s;
+}
+
+/* picture */
+.picturePage{
+    margin: 3em 10em;
+    background-color: #c0add2;
+    border: 0.2em solid #a78cc0;
+}
+
+.picture{
+    padding: 2em;
+}
+
+.pictureText h3{
+    font-size: 1.5rem;
+    color: #196619;
+    padding-top: 1em;
+    font-weight: bold;
+}
+
+.pictureText h4{
+    font-size: 1.3rem;
+    color: #591b98;
+}
+
+.radio{
+    margin-left: 1em;
+}
+
+/* profile */
+.profileBody{
+    margin: 4em;
+    background-color: #c0add2;
+    border-top-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+    border: 0.2em solid #a78cc0;
+    
+}
+
+.profileTitle{
+    color: #591b98;
+    font-size: 2.5rem;
+}
+
+.profileSubTitle{
+    color: #196619;
+    font-size: 1.7rem;
+}
+
+.profileText{
+    color: #591b98;
+    font-size: 1.7rem;
+}
+
+hr{
+    width: 80%;
+    color: #591b98;
+    text-align: left;
+    margin-left: 10%;
+}
+
+/* php action */
+.bodyPhp{
+    margin: 6em;
+    background-color: #c0add2;
+    border: 0.2em solid #a78cc0;
+    border-top-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+}
+
+.titlePhp{
+    font-size: 2rem;
+    color: #196619;
+    font-weight: bold;
+}
+
+.textPhp{
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #591b98;
+}
+
+.varPhp{
+    font-size: 1.2rem;
+    color: #196619;
+}
+
+/* footer */
+footer{
+    background-color: #846284;
+    color: #d9cee4;
+    border-top: 0.4em solid #674c67;
+}
+
+.footerNav{
+    margin-left: 28%;
+    overflow: hidden;
+}
+
+.footerNav li{
+    padding-top: 0.5em;
+    list-style-type: none;
+    float: left;
+}
+
+.footerNav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.7em 2em;
+    text-decoration: none;
+}
+
+.footerNav li a:hover:not(.active){
+    color: #47d147;
+    transition: 0.2s;
+}
+
+.fab{
+    color:#d9cee4;
+    padding: 0.5rem;
+}
+
+.fab:hover{
+   color: #47d147;
+   transform: scale(1.2);
+   transition: 0.4s;
+}
+
+.copyright a{
+    text-decoration: none;
+}
+
+/*responsive*/
+@media only screen and (max-width: 900px){
+    .title{
+        font-family: Impact, sans-serif;
+        font-size: 2.5rem;
+    }
+
+    .searchText{
+        width: 65%;
+        height: auto;
+    }
+
+    .headerNav{
+        margin: 0;
+        padding: 0;
+    }
+
+    .headerNav li{
+        float: none;
+    }
+
+    #username, #password, #passwordConfirm, #email, #displayName, #textArea, #title{
+        width: 60%;
+    }
+
+    .footerNav{
+        margin: 0;
+        padding: 0;
+    }
+
+    .footerNav li{
+        float: none;
+    }
+
+    .result{
+        width: 80%;
+    }
+
+    .resultSearch{
+        font-size: 1.5rem;
+    }
+
+    .picturePage{
+        margin: 1em 3em;
+    }
+
+    .pictureText h3{
+        font-size: 1.8rem;
+        color: #196619;
+    }
+    
+    .pictureText h4{
+        font-size: 1rem;
+        color: #591b98;
+    }
+
+    .indexMiddle{
+        margin: 1em 2em;
+    }
+
+    .indexTitle a{
+        font-size: 1.5rem;
+    }
+    
+    .bodyPhp{
+        margin: 1em;
+    }
+
+    .titlePhp{
+        font-size: 1.5rem;
+    }
+}
