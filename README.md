@@ -1,6 +1,6 @@
 # Image Hosting Website
  
-University project written in HTML, CSS, PHP and MySQL
+University project written in HTML, CSS, JavaScript, PHP and MySQL
 
 ![chrome_RdQJj0yihq](https://user-images.githubusercontent.com/74460526/154972394-3f6fb74c-c90b-4898-bce7-684e35d21dba.png)
 ![chrome_ZrXFo6MC8I](https://user-images.githubusercontent.com/74460526/154972183-083f84b5-0048-42cf-ae5e-aa1819aeea29.png)
