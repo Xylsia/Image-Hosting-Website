@@ -83,7 +83,7 @@
                 <a href="https://www.deviantart.com" target="_blank" alt="DeviantArt"><span class="fab fa-deviantart fa-2x"></span></a>
             </div>
             <div class="footerBot">
-                <p class="copyright"><small>&copy; 2020 &hearts; <a href="https://singidunum.ac.rs" target="_blank">Singidunum</a> &hearts; <a href="index.php">Truwupapers</a> &hearts; Jovana Kržanović 2018200030 &hearts; </small></p>
+                <p class="copyright"><small>&copy; 2020 &hearts; <a href="https://singidunum.ac.rs" target="_blank">Singidunum</a> &hearts; <a href="index.php">Truwupapers</a> &hearts;</small></p>
             </div>    
 		</footer>
 		<script type="text/javascript" src="../js/privacy.js"></script>
